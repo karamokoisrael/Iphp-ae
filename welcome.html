@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IPHP - Welcome</title>
+    <?php $testPHP();  style(); ?>
+  </head>
+      <!--body and contents-->
+  <body>
+    <div class="flex-center relative full-height">
+
+      <div class="content">
+        <div class="titre m-b-md">
+            <?= $testPHP() ?>
+        </div>
+
+        <div class="refs">
+            <a href="https://skytech.org/iphp/templates/">Templates</a>
+            <a href="https://skytech.org/iphp/modules/">IPHP Modules</a>
+            <a href="https://skytech.com/iphp/blog">Blog</a>
+            <a href="https://github.com/iphp/iphp">GitHub</a>
+            <a href="https://skytech.com/iphp/docs">Documentations</a>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+<?php
+
+function style(){
+  echo "
+  <style>
+    html, body {
+        background-color: #009fff;
+        color: #fff;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 200;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .full-height {
+        height: 100vh;
+    }
+
+    .flex-center {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .top-right {
+        position: absolute;
+        right: 10px;
+        top: 18px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .titre {
+        font-size: 100px;
+    }
+
+    .refs > a {
+        color: #fff;
+        padding: 0 25px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .m-b-md {
+        margin-bottom: 30px;
+    }
+  </style>
+  ";
+}
+
+function phpv()
+{
+  return phpversion();
+}

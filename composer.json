@@ -1,0 +1,32 @@
+{
+    "name": "iphp/iphp",
+    "description": "The Best PHP FrameWork",
+    "type": "project",
+    "keywords": [
+        "framework",
+        "Iphp"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stephane Ncho",
+            "email": "iphp@webcodeurspro.net"
+        }
+    ],
+    "autoload":{
+      "psr-4":{
+        "Controller\\": "intermediary"
+      }
+    },
+    "autoload-dev":{
+      "psr-4":{
+        "Model\\": "middleware"
+      }
+    },
+
+    "minimum-stability": "dev",
+    "require": {
+        "filp/whoops": "^2.6@dev",
+        "phpmailer/phpmailer": "dev-master"
+    }
+}
